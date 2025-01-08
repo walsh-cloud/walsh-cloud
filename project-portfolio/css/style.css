@@ -1,0 +1,215 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, #e0e0e0, #c0c0c0, #ffffff 50%, #c0c0c0, #e0e0e0);
+    background-size: 300% 300%;
+    animation: shiny-metal 6s linear infinite;
+  }
+  
+  @keyframes shiny-metal {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  
+  h1, h2{
+    text-align: center;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  nav {
+    display: block;
+    text-align: center; /* Ensures links are centered within the nav */
+    margin: 20px auto; /* Centers the nav horizontally */
+    width: 50%; /* Keeps the width proportional */
+  }
+  
+  li {
+    display: inline-block; /* Ensures links are inline */
+    margin: 0 10px; /* Adds spacing between list items */
+  }
+  
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: blue;
+    border: 1px solid #000;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: lightblue;
+    color: darkblue;
+  }
+  
+  a:active {
+    background-color: darkblue;
+    color: white;
+    transform: scale(0.95);
+  }
+  
+  /* Shiny Metal Effect for About and Projects */
+section#about-me, section#projects {
+  background: linear-gradient(145deg, #c9c9c9, #f0f0f0, #a9a9a9);
+  color: #333;
+  border: 2px solid #888; /* Border to enhance the metal look */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), inset 0px 1px 3px rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 90%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for a polished look */
+section#about-me:hover, section#projects:hover {
+  background: linear-gradient(145deg, #e0e0e0, #f9f9f9, #bdbdbd);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5), inset 0px 1px 5px rgba(255, 255, 255, 1);
+}
+
+  
+  
+p{
+    display: block;
+    font-size: 15px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+
+
+table,tr,td{
+    border: 3px solid black;
+    padding: 6px;
+}
+
+#about-me {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #about-me h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  #about-me ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #about-me ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9fb;
+    border-left: 4px solid #007acc;
+    border-radius: 4px;
+  }
+
+  #about-me ul li strong {
+    color: #007acc;
+  }
+
+  #about-me ul ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  #about-me ul ul li {
+    margin-bottom: 8px;
+    padding: 8px;
+    background: #f4f4f9;
+    border-left: 4px solid #cccccc;
+  }
+
+  #projects {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #projects ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #projects ul li {
+    background: #f9f9fb;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #007acc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #projects ul li:hover {
+    background-color: #e6f7ff;
+    transform: translateX(5px);
+  }
+
+  #projects ul li strong {
+    color: #007acc;
+    font-weight: bold;
+  }
